@@ -1,0 +1,9 @@
+<h1>Existem {{ contar }} palavras no texto apresentado</h1>
+<a href="{% url 'inicio' %}">Inicie novamente</a>
+<h1>Seu texto</h1>
+  {{ textotexto }}
+<h1>Contador de Palavras</h1>
+{% for palavra, contartotal in palavrasarrumadas %}
+{{ palavra }} - {{ contartotal }}
+<br/>
+{% endfor %}
